@@ -1,0 +1,88 @@
+{
+  "name": "ng-spinners-project",
+  "version": "1.1.3",
+  "author": "JoshK2",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoshK2/ng-spinners"
+  },
+  "homepage": "https://bit.dev/joshk/ng-spinners",
+  "keywords": [
+    "angular",
+    "modules",
+    "loaders",
+    "css-animations",
+    "spinners",
+    "angular-component",
+    "angular-spinners",
+    "angular-spinner",
+    "loadingio",
+    "loading-animations",
+    "loading",
+    "loader",
+    "progress",
+    "activity"
+  ],
+  "private": false,
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "build:lib": "cp README.md lib/ && ng-packagr -p lib/package.json",
+    "deploy:npm": "npm publish lib/dist",
+    "deploy:bit": "bit export joshk.ng-spinners",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.html\" \"src/**/*.css\" \"lib/components/**/*.ts\" \"lib/components/**/*.html\" \"lib/components/**/*.css\""
+  },
+  "dependencies": {
+    "@angular/common": "~8.1.2",
+    "@angular/compiler": "~8.1.2",
+    "@angular/core": "~8.1.2",
+    "@angular/forms": "~8.1.2",
+    "@angular/platform-browser": "~8.1.2",
+    "@angular/platform-browser-dynamic": "~8.1.2",
+    "@angular/router": "~8.1.2",
+    "rxjs": "~6.4.0",
+    "tslib": "^1.9.0",
+    "zone.js": "~0.9.1"
+  },
+  "peerDependencies": {
+    "@angular/common": "~8.1.2",
+    "@angular/core": "~8.1.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.801.2",
+    "@angular/cli": "^8.3.1",
+    "@angular/compiler-cli": "~8.1.2",
+    "@angular/language-service": "~8.1.2",
+    "@types/jasmine": "~3.3.8",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
+    "codelyzer": "^5.0.0",
+    "jasmine-core": "~3.4.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~4.1.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma-jasmine": "~2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.0",
+    "ng-packagr": "^5.4.3",
+    "prettier": "^1.18.2",
+    "protractor": "~5.4.0",
+    "ts-node": "~7.0.0",
+    "tsickle": "^0.38.1",
+    "tslint": "^5.15.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "~3.4.3"
+  },
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/angular@9.0.14"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
+  }
+}
